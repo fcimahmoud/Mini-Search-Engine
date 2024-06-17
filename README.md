@@ -1,13 +1,13 @@
 # This implementation demonstrates a basic web crawler and search engine
 
-1. **crawling**:
+## 1. **crawling**:
    - The `crawl` function takes a seed URL and a maximum number of pages to crawl.
    - It initializes a set to track visited URLs and a list to store URLs to be crawled.
    - It also initializes an inverted index, which maps terms to the URLs where they appear.
    - The function fetches web pages, extracts relevant information (in this case, the page content), saves the content to files, and indexes the content.
    - Finally, it saves the inverted index to a file.
 
-2. **indexing**:
+### 2. **indexing**:
    - The `index_page_content` function takes a URL, the page content, and an inverted index as input.
    - It tokenizes the content, removes stop words, stems the tokens, and normalizes them.
    - It then updates the inverted index, mapping each term to the URLs where it appears.
